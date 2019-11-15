@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>
+        Add Author
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/home/styles/styles.css">
+</head>
+
+<body>
+    <h1>Add Author</h1>
+    <br>
+
+    <form id="musicAddForm" onsubmit="save(); return false;">
+        <div class="save"><button class="btn btn-success" id="saveme">Save</button></div><br><br>
+        <output type="text" class="label">Name: </output>
+        <input type="text" class="form-control mb-2" id="nid" required><br>
+        <output type="text" class="label">Image Name: </output>
+        <input type="text" class="form-control mb-2" id="iid" required><br>
+        <output type="text" class="label">Code: </output>
+        <input type="text" class="form-control mb-2" id="cid" required><select id="searchops">
+            <option value="https://www.fanfiction.net/u/">Fanfiction.net</option>
+            <option value="https://forums.spacebattles.com/members/">Spacebattles</option>
+            <option value="https://forums.sufficientvelocity.com/members/">Sufficient Velocity</option>
+        </select><br>
+        <output type="text" class="label">Nationality: </output>
+        <input type="text" class="form-control mb-2" id="naid" required><br>
+        <output type="text" class="label">Bio: </output>
+        <input type="text" class="form-control mb-2" id="bid" required><br>
+    </form>
+
+    <script src="/home/scripts/authorsAdd.js">
+    </script>
+</body>
+
+</html>

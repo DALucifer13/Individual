@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <title>
+        Search Music
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/home/styles/styles.css">
+</head>
+
+<body>
+    <h1>Search Music</h1>
+    <br><br>
+
+    <form class="combobox">
+        <select id="searchbar">
+            <option value="name">Name</option>
+            <option value="id">ID</option>
+            <option value="artist">Artist</option>
+            <option value="album">Album</option>
+            <option value="genre">Genre</option>
+        </select>
+    </form>
+    <input type="text" class="form-control mb-2 search" id="searchbox">
+    <button id="sbtn1" class="sbtn1">Search</button>
+    <button id="sbtn2" class="sbtn1">All</button>
+    <br><br><br>
+    <div id="output" class="container-fluid"></div>
+    <script src="/home/scripts/musicSearch.js">
+    </script>
+</body>
+
+</html>

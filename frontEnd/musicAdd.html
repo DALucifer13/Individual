@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>
+        Add Music
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/home/styles/styles.css">
+</head>
+
+<body>
+    <h1>Add Music</h1>
+    <br>
+    <form id="musicAddForm" onsubmit="save(); return false;">
+        <div class="save"><button class="btn btn-success" id="saveme">Save</button></div><br><br>
+        <output type="text" class="label">Name: </output>
+        <input type="text" class="form-control mb-2" id="nid" required><br>
+        <output type="text" class="label">Image Name: </output>
+        <input type="text" class="form-control mb-2" id="iid" required><br>
+        <output type="text" class="label">Artist: </output>
+        <input type="text" class="form-control mb-2" id="arid" required><br>
+        <output type="text" class="label">Album: </output>
+        <input type="text" class="form-control mb-2" id="alid" required><br>
+        <output type="text" class="label">Genre: </output>
+        <input type="text" class="form-control mb-2" id="gid" required><br>
+        <output type="text" class="label">Length: </output>
+        <input type="text" class="form-control mb-2" id="leid" required><br>
+        <output type="text" class="label">File Name: </output>
+        <input type="text" class="form-control mb-2" id="loid" required><br>
+    </form>
+    <script src="/home/scripts/musicAdd.js">
+    </script>
+</body>
+
+</html>

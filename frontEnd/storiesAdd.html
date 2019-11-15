@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>
+        Add Story
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/home/styles/styles.css">
+</head>
+
+<body>
+
+
+    <h1>Add Story</h1>
+    <br>
+    <form id="musicAddForm" onsubmit="save(); return false;">
+        <div class="save"><button class="btn btn-success" id="saveme">Save</button></div><br><br>
+        <output type="text" class="label">Name: </output>
+        <input type="text" class="form-control mb-2" id="nid" required><br>
+        <output type="text" class="label">Image Name: </output>
+        <input type="text" class="form-control mb-2" id="iid" required><br>
+        <output type="text" class="label">Chapter Count: </output>
+        <input type="number" class="form-control mb-2" id="cid" required><br>
+        <output type="text" class="label">Word Count: </output>
+        <input type="text" class="form-control mb-2" id="wid" required><br>
+        <output type="text" class="label">Story Code: </output>
+        <input type="text" class="form-control mb-2" id="scid" required>
+        <select id="searchops">
+            <option value="https://www.fanfiction.net/s/">Fanfiction.net</option>
+            <option value="https://forums.spacebattles.com/threads/">Spacebattles</option>
+            <option value="https://forums.sufficientvelocity.com/threads/">Sufficient Velocity</option>
+        </select><br>
+        <output type="text" class="label">Author ID: </output>
+        <input type="number" class="form-control mb-2" id="aid" required><br>
+        <output type="text" class="label">Fandom 1: </output>
+        <input type="text" class="form-control mb-2" id="f1id" required><br>
+        <output type="text" class="label">Fandom 2: </output>
+        <input type="text" class="form-control mb-2" id="f2id"><br>
+        <output type="text" class="label">Summary: </output>
+        <input type="text" class="form-control mb-2" id="suid" required><br>
+        <script src="/home/scripts/storiesAdd.js">
+        </script>
+</body>
+
+</form>
+
+
+
+</html>

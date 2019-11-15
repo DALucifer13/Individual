@@ -1,0 +1,18 @@
+Must:
+working front end with crud functionality interfaces
+working java back end to proccess and pass information on alongside crud functionality
+working database to store data
+
+should:
+store information on fanfiction
+store information on music
+
+could:
+link to fanfiction story/most recent chapter
+play song selected
+
+would:
+add ability to navigate to any chapter through a story
+add playlist functionality
+update when a story updates
+update how many songs are in designated folder, alongside auto info filling

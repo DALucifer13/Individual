@@ -1,0 +1,28 @@
+fanfiction:
+id
+img
+title
+summary
+chapters
+fandom1
+fandom2
+storycode
+author id
+
+author:
+id
+img
+name
+nationality
+story count
+unique fandoms
+bio
+
+music:
+id
+img
+name
+artist
+genre
+album
+length

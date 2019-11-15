@@ -1,0 +1,24 @@
+{
+  "name": "serverpack",
+  "version": "1.0.0",
+  "description": "individual server package",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha test/*.spec.js",
+    "start": "node server/server.js"
+  },
+  "author": "Kyle McPherson",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql2": "^2.0.0",
+    "path": "^0.12.7",
+    "sequelize": "^5.21.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^6.2.2"
+  }
+}
