@@ -2,7 +2,7 @@ let path = require("path");
 let express = require('express');
 let router = express.Router();
 let musicAddRouter = require("./serverAddMusic");
-let musicSearchRouter = require("./serversearchMusic");
+let musicSearchRouter = require("./serverSearchMusic");
 let musicViewRouter = require("./serverViewMusic");
 let musicEdiRouter = require("./serverEditMusic");
 
