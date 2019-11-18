@@ -55,8 +55,19 @@ function deleter() {
 function viewer() {
     fetch("http://localhost:1024/home/fanfiction/stories/search/select/id/" + id)
         .then(res => res.json())
-        .then(res => window.open(res[0].link + "/" + output2.value, '_blank'));
+        .then(res => pager(res[0]));
 
+}
+
+function pager(data){
+    if(data.link.includes("fanfiction.net")){
+        midder = "";
+    }
+    else{
+        midder = "page-"
+    }
+
+    window.open(data.link + "/" + midder + output2.value, '_blank')
 }
 
 function editer() {
