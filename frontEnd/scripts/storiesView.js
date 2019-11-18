@@ -25,7 +25,7 @@ function load(data) {
     p.innerText = "\nName: " + data.name
         + "\nFandoms: " + data.fandom1 + " & " + data.fandom2
         + "\nAuthor: " + data.author.name
-        + "\nChapters: " + data.chapters
+        + "\nChapters/Pages: " + data.chapters
         + "\nWord Count: " + data.words
         + "\nSummary: " + data.summary;
 
@@ -64,7 +64,7 @@ function pager(data){
         midder = "";
     }
     else{
-        midder = "page-"
+        midder = "reader/page-"
     }
 
     window.open(data.link + "/" + midder + output2.value, '_blank')
