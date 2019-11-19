@@ -1,7 +1,7 @@
 var SEQ = require("sequelize");
 
 var seq1 = new SEQ(
-    "individualProject",
+    "tester1",
     "root",
     "password",
     {
