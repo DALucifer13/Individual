@@ -62,3 +62,71 @@ describe("Music", () => {
 
 });
 
+describe("Authors", () => {
+    it("create", (done) => {
+        chai.request(app)
+            .post('/home/fanfiction/authors/add/save')
+            .type('json')
+            .send({ name: "Sakurademonalchemist", image: "sda.jpg", nation: "American", bio: "writer", code: "912889"})
+            .end((err, res) => {
+                chai.expect(res.status).to.eq(200);
+                done();
+            })
+    });
+
+    it("create2", (done) => {
+        chai.request(app)
+            .post('/home/fanfiction/authors/add/save')
+            .type('json')
+            .send({ name: "Sakurademonalchemist", image: "sda.jpg", nation: "American", bio: "writer", code: "912889"})
+            .end((err, res) => {
+                chai.expect(res.status).to.eq(200);
+                done();
+            })
+    });
+
+    it("read", (done) => {
+        chai.request(app)
+            .get("/home/fanfiction/authors/search/select/id/2")
+            .end((err, res) => {
+                chai.expect(res.status).to.eq(200);
+                chai.expect(res.body[0].id).to.eq(1);
+                chai.expect(res.body[0].name).to.eq("Sakurademonalchemist");
+                chai.expect(res.body[0].code).to.eq("912889");
+                done();
+            })
+    });
+
+    it("update", (done) => {
+        chai.request(app)
+            .put('/home/fanfiction/authors/edit/save')
+            .type('json')
+            .send({ id: 2, name: "SDA", image: "sda.jpg", nation: "American", bio: "writer", code: "912889"})
+            .end((err, res) => {
+                chai.expect(res.status).to.eq(200);
+                done();
+            })
+    });
+
+    it("readupdate", (done) => {
+        chai.request(app)
+            .get("/home/fanfiction/authors/search/select/id/2")
+            .end((err, res) => {
+                chai.expect(res.status).to.eq(200);
+                chai.expect(res.body[0].id).to.eq(2);
+                chai.expect(res.body[0].name).to.eq("SDA");
+                chai.expect(res.body[0].code).to.eq("912889");
+                done();
+            })
+    });
+
+    it("delete", (done) => {
+        chai.request(app)
+            .delete('/home/fanfiction/authors/view/delete/2')
+            .end((err, res) => {
+                chai.expect(res.status).to.eq(200);
+                done();
+            })
+    });
+
+});
