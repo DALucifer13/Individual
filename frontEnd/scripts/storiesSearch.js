@@ -47,7 +47,7 @@ function searchpt2(data) {
         imgdiv.className = "imgdiv";
         h.innerText = d.name + "\n";
         img.src = "/home/images/story/" + posters(d.image);
-        p.innerText = "Fandoms: " + d.fandom1 + " & " + d.fandom2
+        p.innerText = "Fandoms: \n" + d.fandom1 + " & " + d.fandom2
             + "\nChapters: " + d.chapters + "\nWord Count: " + d.words;
         imgdiv.append(img);
         sq.append(h, imgdiv, p);
